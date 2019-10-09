@@ -1,0 +1,66 @@
+2019-10-08 17:16:42,899 INFO o.a.j.u.JMeterUtils: Setting Locale to zh_CN
+2019-10-08 17:16:42,911 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2019-10-08 17:16:42,917 INFO o.a.j.JMeter: Copyright (c) 1998-2017 The Apache Software Foundation
+2019-10-08 17:16:42,917 INFO o.a.j.JMeter: Version 3.3 r1808647
+2019-10-08 17:16:42,917 INFO o.a.j.JMeter: java.version=1.8.0_171
+2019-10-08 17:16:42,917 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) Client VM
+2019-10-08 17:16:42,917 INFO o.a.j.JMeter: os.name=Windows 7
+2019-10-08 17:16:42,917 INFO o.a.j.JMeter: os.arch=x86
+2019-10-08 17:16:42,917 INFO o.a.j.JMeter: os.version=6.1
+2019-10-08 17:16:42,917 INFO o.a.j.JMeter: file.encoding=GBK
+2019-10-08 17:16:42,918 INFO o.a.j.JMeter: Max memory     =518979584
+2019-10-08 17:16:42,918 INFO o.a.j.JMeter: Available Processors =4
+2019-10-08 17:16:42,924 INFO o.a.j.JMeter: Default Locale=中文 (中国)
+2019-10-08 17:16:42,925 INFO o.a.j.JMeter: JMeter  Locale=中文 (中国)
+2019-10-08 17:16:42,925 INFO o.a.j.JMeter: JMeterHome=E:\java\Login\target\jmeter
+2019-10-08 17:16:42,926 INFO o.a.j.JMeter: user.dir  =E:\java\Login\target\jmeter\bin
+2019-10-08 17:16:42,926 INFO o.a.j.JMeter: PWD       =E:\java\Login\target\jmeter\bin
+2019-10-08 17:16:42,927 INFO o.a.j.JMeter: IP: 10.0.53.114 Name: 20180419-113111 FullName: 20180419-113111
+2019-10-08 17:16:42,930 INFO o.a.j.s.FileServer: Default base='E:\java\Login\target\jmeter\bin'
+2019-10-08 17:16:42,931 INFO o.a.j.s.FileServer: Set new base='E:\java\Login\target\jmeter\testFiles'
+2019-10-08 17:16:43,042 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-10-08 17:16:43,051 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-10-08 17:16:43,055 INFO o.a.j.s.SaveService: Using SaveService properties version 3.2
+2019-10-08 17:16:43,060 INFO o.a.j.s.SaveService: Loading file: E:\java\Login\target\jmeter\testFiles\Login-1.jmx
+2019-10-08 17:16:43,103 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-10-08 17:16:43,104 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-10-08 17:16:43,104 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-10-08 17:16:43,104 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2019-10-08 17:16:43,104 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2019-10-08 17:16:43,104 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2019-10-08 17:16:43,433 INFO o.a.j.JMeter: Creating summariser <summary>
+2019-10-08 17:16:43,436 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-10-08 17:16:43,437 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-10-08 17:16:43,437 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-10-08 17:16:43,440 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-10-08 17:16:43,441 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-10-08 17:16:43,487 INFO o.a.j.t.TestPlan: added D:\Desktop\commons-pool2-2.3.jar to classpath
+2019-10-08 17:16:43,487 INFO o.a.j.t.TestPlan: added D:\Desktop\jedis-2.7.0.jar to classpath
+2019-10-08 17:16:43,487 INFO o.a.j.t.TestPlan: added D:\apache-jmeter-3.3\lib\fastjson-1.2.60.jar to classpath
+2019-10-08 17:16:43,510 INFO o.a.j.JMeter: 正在运行的测试 (1570526203510)
+2019-10-08 17:16:43,542 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 登录
+2019-10-08 17:16:43,543 INFO o.a.j.e.StandardJMeterEngine: Starting 2 threads for group 登录.
+2019-10-08 17:16:43,543 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-10-08 17:16:43,543 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=2 ramp-up=1 perThread=500.0 delayedStart=false
+2019-10-08 17:16:43,571 INFO o.a.j.t.JMeterThread: Thread started: 登录 1-1
+2019-10-08 17:16:43,572 INFO o.a.j.s.FileServer: Stored: D:\Desktop\getimgCode.csv Alias: D:\Desktop\getimgCode.csv@31140627
+2019-10-08 17:16:43,593 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-10-08 17:16:43,593 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-10-08 17:16:43,597 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = 20180419-113111
+2019-10-08 17:16:43,602 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2019-10-08 17:16:43,608 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-10-08 17:16:43,608 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2019-10-08 17:16:43,608 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-10-08 17:16:43,608 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-10-08 17:16:43,972 INFO o.a.j.s.FileServer: Stored: D:\Desktop\getShortMessage.csv Alias: D:\Desktop\getShortMessage.csv@27459634
+2019-10-08 17:16:44,094 INFO o.a.j.t.JMeterThread: Thread started: 登录 1-2
+2019-10-08 17:16:44,094 INFO o.a.j.t.JMeterThread: Stop Thread seen for thread 登录 1-2, reason: org.apache.jorphan.util.JMeterStopThreadException: End of file:D:\Desktop\getimgCode.csv detected for CSV DataSet:CSV 数据文件设置 configured with stopThread:true, recycle:false
+2019-10-08 17:16:44,094 INFO o.a.j.t.JMeterThread: Thread finished: 登录 1-2
+2019-10-08 17:16:44,968 INFO o.a.j.s.FileServer: Stored: D:\Desktop\login.csv Alias: D:\Desktop\login.csv@27459634
+2019-10-08 17:16:45,547 INFO o.a.j.t.JMeterThread: Stop Thread seen for thread 登录 1-1, reason: org.apache.jorphan.util.JMeterStopThreadException: End of file:D:\Desktop\login.csv detected for CSV DataSet:CSV 数据文件设置 configured with stopThread:true, recycle:false
+2019-10-08 17:16:45,547 INFO o.a.j.t.JMeterThread: Thread finished: 登录 1-1
+2019-10-08 17:16:45,548 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2019-10-08 17:16:45,549 INFO o.a.j.s.FileServer: Close: D:\Desktop\getimgCode.csv@31140627
+2019-10-08 17:16:45,549 INFO o.a.j.s.FileServer: Close: D:\Desktop\getShortMessage.csv@27459634
+2019-10-08 17:16:45,550 INFO o.a.j.s.FileServer: Close: D:\Desktop\login.csv@27459634
+2019-10-08 17:16:45,552 INFO o.a.j.r.Summariser: summary =     45 in 00:00:02 =   22.0/s Avg:    36 Min:    21 Max:   324 Err:     2 (4.44%)

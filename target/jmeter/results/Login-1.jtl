@@ -1,0 +1,2688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="263" it="0" lt="135" ct="56" ts="1570526203625" s="true" lb="获取图形验证码" rc="200" rm="OK" tn="登录 1-1" dt="text" by="12400" sby="291" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="1" it="0" lt="0" ct="0" ts="1570526203887" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1217" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/getImgIdentify
+HTTPSampler.port=8080
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=
+TestElement.enabled=true
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=获取图形验证码
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@1925040
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/getImgIdentify
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+imgCode=2909
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 0
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;message&quot;:&quot;获取图形验证码成功&quot;,&quot;data&quot;:&quot;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&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/getImgIdentify</java.net.URL>
+</httpSample>
+<httpSample t="28" it="0" lt="25" ct="0" ts="1570526203973" s="true" lb="getmessage_1" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1622" sby="322" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204001" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1352" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;&quot;,&quot;imgCode&quot;:&quot;&quot;}()
+TestElement.enabled=true
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_1
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=1
+imgCode=2909
+message=手机号不能为空
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;&quot;,&quot;imgCode&quot;:&quot;&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 25
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;手机号不能为空&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;&quot;,&quot;imgCode&quot;:&quot;&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="21" ct="0" ts="1570526204007" s="true" lb="getmessage_2" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1616" sby="324" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204030" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1337" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot; &quot;,&quot;imgCode&quot;:&quot; &quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_2
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=2
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot; &quot;,&quot;imgCode&quot;:&quot; &quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 27
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot; &quot;,&quot;imgCode&quot;:&quot; &quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="22" ct="0" ts="1570526204034" s="true" lb="getmessage_3" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1626" sby="329" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204057" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1347" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;abc&quot;,&quot;imgCode&quot;:&quot;1235&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_3
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=3
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;abc&quot;,&quot;imgCode&quot;:&quot;1235&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 32
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;abc&quot;,&quot;imgCode&quot;:&quot;1235&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="22" ct="0" ts="1570526204061" s="true" lb="getmessage_4" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1632" sby="332" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204085" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1353" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;#$$%^^&quot;,&quot;imgCode&quot;:&quot;1237&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_4
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=4
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;#$$%^^&quot;,&quot;imgCode&quot;:&quot;1237&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 35
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;#$$%^^&quot;,&quot;imgCode&quot;:&quot;1237&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="25" it="0" lt="23" ct="0" ts="1570526204088" s="true" lb="getmessage_5" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1628" sby="332" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="1" it="0" lt="0" ct="0" ts="1570526204112" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1349" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;汉字&quot;,&quot;imgCode&quot;:&quot;1238&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_5
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=5
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;汉字&quot;,&quot;imgCode&quot;:&quot;1238&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 35
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;汉字&quot;,&quot;imgCode&quot;:&quot;1238&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="21" ct="0" ts="1570526204116" s="true" lb="getmessage_6" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1626" sby="329" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204140" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1347" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;ABC&quot;,&quot;imgCode&quot;:&quot;1239&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_6
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=6
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;ABC&quot;,&quot;imgCode&quot;:&quot;1239&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 32
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;ABC&quot;,&quot;imgCode&quot;:&quot;1239&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="22" ct="0" ts="1570526204143" s="true" lb="getmessage_7" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1630" sby="331" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204167" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1351" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;12.36&quot;,&quot;imgCode&quot;:&quot;1240&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_7
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=7
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;12.36&quot;,&quot;imgCode&quot;:&quot;1240&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 34
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;12.36&quot;,&quot;imgCode&quot;:&quot;1240&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="21" ct="0" ts="1570526204170" s="true" lb="getmessage_8" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1632" sby="332" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204193" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1353" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;-20.36&quot;,&quot;imgCode&quot;:&quot;1241&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_8
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=8
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;-20.36&quot;,&quot;imgCode&quot;:&quot;1241&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 35
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;-20.36&quot;,&quot;imgCode&quot;:&quot;1241&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="22" ct="0" ts="1570526204196" s="true" lb="getmessage_9" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1642" sby="337" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204220" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1363" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;25726399706&quot;,&quot;imgCode&quot;:&quot;1242&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_9
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=9
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;25726399706&quot;,&quot;imgCode&quot;:&quot;1242&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 40
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;25726399706&quot;,&quot;imgCode&quot;:&quot;1242&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="20" ct="0" ts="1570526204224" s="true" lb="getmessage_10" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1646" sby="338" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204247" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1367" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;157263997060&quot;,&quot;imgCode&quot;:&quot;1243&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_10
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=10
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;157263997060&quot;,&quot;imgCode&quot;:&quot;1243&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 41
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;157263997060&quot;,&quot;imgCode&quot;:&quot;1243&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="21" it="0" lt="20" ct="0" ts="1570526204251" s="true" lb="getmessage_11" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1642" sby="336" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204272" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1363" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;1572639970&quot;,&quot;imgCode&quot;:&quot;1244&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_11
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=11
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;1572639970&quot;,&quot;imgCode&quot;:&quot;1244&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 39
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;1572639970&quot;,&quot;imgCode&quot;:&quot;1244&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="21" ct="0" ts="1570526204275" s="true" lb="getmessage_12" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1646" sby="338" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="1" it="0" lt="0" ct="0" ts="1570526204297" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1367" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot; 15726399706&quot;,&quot;imgCode&quot;:&quot;1245&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_12
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=12
+imgCode=2909
+message=请输入正确的手机号码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot; 15726399706&quot;,&quot;imgCode&quot;:&quot;1245&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 41
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot; 15726399706&quot;,&quot;imgCode&quot;:&quot;1245&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="20" ct="0" ts="1570526204303" s="true" lb="getmessage_13" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1631" sby="333" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204326" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1355" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_13
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=13
+imgCode=2909
+message=图形验证码不能为空
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 36
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;图形验证码不能为空&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="25" it="0" lt="23" ct="0" ts="1570526204328" s="true" lb="getmessage_14" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1643" sby="334" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="1" it="0" lt="0" ct="0" ts="1570526204352" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1361" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot; &quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_14
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=14
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot; &quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 37
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot; &quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="22" ct="0" ts="1570526204355" s="true" lb="getmessage_15" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1647" sby="336" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204379" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1365" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;abc&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_15
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=15
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;abc&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 39
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;abc&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="22" it="0" lt="21" ct="0" ts="1570526204382" s="true" lb="getmessage_16" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1653" sby="339" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204404" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1371" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;%^&amp;*((&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_16
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=16
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;%^&amp;*((&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 42
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;%^&amp;*((&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="22" ct="0" ts="1570526204407" s="true" lb="getmessage_17" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1649" sby="337" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204430" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1367" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;abcd&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_17
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=17
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;abcd&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 40
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;abcd&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="25" it="0" lt="23" ct="0" ts="1570526204432" s="true" lb="getmessage_18" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1649" sby="337" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204457" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1367" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;ABCD&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_18
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=18
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;ABCD&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 40
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;ABCD&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="22" ct="0" ts="1570526204462" s="true" lb="getmessage_19" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1649" sby="339" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="1" it="0" lt="0" ct="0" ts="1570526204485" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1367" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;汉字&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_19
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=19
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;汉字&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 42
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;汉字&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="23" ct="0" ts="1570526204489" s="true" lb="getmessage_20" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1651" sby="338" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204513" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1369" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;12.36&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_20
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=20
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;12.36&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 41
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;12.36&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="21" ct="0" ts="1570526204517" s="true" lb="getmessage_21" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1653" sby="339" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204540" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1371" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;-20.36&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_21
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=21
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;-20.36&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 42
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;-20.36&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="27" it="0" lt="25" ct="0" ts="1570526204543" s="true" lb="getmessage_22" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1645" sby="335" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204570" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1363" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;12&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_22
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=22
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;12&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 38
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;12&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="25" it="0" lt="24" ct="0" ts="1570526204573" s="true" lb="getmessage_23" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1653" sby="339" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204598" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1371" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;123456&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_23
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=23
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;123456&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 42
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;123456&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="25" it="0" lt="23" ct="0" ts="1570526204602" s="true" lb="getmessage_24" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1649" sby="337" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204627" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1367" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;9999&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_24
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=24
+imgCode=2909
+message=请输入正确的图形验证码
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;9999&quot;}
+status=0
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:43 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 40
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的图形验证码&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;9999&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="324" it="0" lt="292" ct="0" ts="1570526204630" s="true" lb="getmessage_25" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1637" sby="337" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="0" it="0" lt="0" ct="0" ts="1570526204954" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="登录 1-1" dt="text" by="1376" sby="0" sc="1" ec="0" ng="0" na="0" hn="20180419-113111">
+    <responseHeader class="java.lang.String"></responseHeader>
+    <requestHeader class="java.lang.String"></requestHeader>
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=utf-8
+HTTPSampler.domain=192.168.29.88
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@1004a34
+HTTPSampler.method=POST
+HTTPSampler.path=/app/IdentifyController/sendShortMessageOne
+HTTPSampler.port=8080
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=http
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments=={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;2909&quot;}()
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=getmessage_25
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@2c3777
+START.HMS=171642
+START.MS=1570526202927
+START.YMD=20191008
+TESTSTART.MS=1570526203438
+__jmeter.USER_TOKEN__=登录 1-1
+api=/app/IdentifyController/sendShortMessageOne
+content_encoding=utf-8
+deviceId=D62EA55A-06EC-4888-8164-0C021525FB12
+getimgresult=1
+host=192.168.29.88
+id=25
+imgCode=2909
+message=发送成功
+messageCode=2701
+method=POST
+phone=15726399706
+port=8080
+protocol=http
+request={&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;${imgCode}&quot;}
+status=1
+
+</responseData>
+    <responseFile class="java.lang.String"></responseFile>
+    <samplerData class="java.lang.String">SamplerProperties
+JMeterVariables
+</samplerData>
+  </sample>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 40
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;message&quot;:&quot;发送成功&quot;,&quot;data&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;phone&quot;:&quot;15726399706&quot;,&quot;imgCode&quot;:&quot;2909&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/IdentifyController/sendShortMessageOne</java.net.URL>
+</httpSample>
+<httpSample t="27" it="0" lt="26" ct="0" ts="1570526204972" s="false" lb="login_login_2" rc="400" rm="Bad Request" tn="登录 1-1" dt="text" by="849" sby="337" sc="1" ec="1" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /请输入正确的短信验证码/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 400 Bad Request
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+Connection: close
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 58
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;timestamp&quot;:1570526204951,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;exception&quot;:&quot;org.springframework.http.converter.HttpMessageNotReadableException&quot;,&quot;message&quot;:&quot;Could not read JSON document: Unexpected character (&apos;\&quot;&apos; (code 34)): was expecting comma to separate Object entries\n at [Source: java.io.PushbackInputStream@2e9dc064; line: 1, column: 28]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (&apos;\&quot;&apos; (code 34)): was expecting comma to separate Object entries\n at [Source: java.io.PushbackInputStream@2e9dc064; line: 1, column: 28]&quot;,&quot;path&quot;:&quot;/app/userController/login&quot;}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:10512345678&quot;,platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="36" it="0" lt="35" ct="13" ts="1570526205003" s="true" lb="login_login_3" rc="200" rm="OK" tn="登录 1-1" dt="text" by="288" sby="328" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 49
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;手机号不能为空&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="24" ct="0" ts="1570526205043" s="true" lb="login_login_4" rc="200" rm="OK" tn="登录 1-1" dt="text" by="294" sby="329" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 50
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot; &quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="24" ct="0" ts="1570526205072" s="true" lb="login_login_5" rc="200" rm="OK" tn="登录 1-1" dt="text" by="294" sby="331" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 52
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;123&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="23" ct="0" ts="1570526205101" s="true" lb="login_login_6" rc="200" rm="OK" tn="登录 1-1" dt="text" by="294" sby="340" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 61
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;123456789010&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="22" it="0" lt="22" ct="0" ts="1570526205129" s="true" lb="login_login_7" rc="200" rm="OK" tn="登录 1-1" dt="text" by="294" sby="334" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 55
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;汉字&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="23" ct="0" ts="1570526205156" s="true" lb="login_login_8" rc="200" rm="OK" tn="登录 1-1" dt="text" by="294" sby="331" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 52
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;abc&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="22" it="0" lt="22" ct="0" ts="1570526205184" s="true" lb="login_login_9" rc="200" rm="OK" tn="登录 1-1" dt="text" by="294" sby="331" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 52
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;ABC&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="23" it="0" lt="23" ct="0" ts="1570526205211" s="true" lb="login_login_10" rc="200" rm="OK" tn="登录 1-1" dt="text" by="294" sby="340" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 61
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;￥%……&amp;*&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="25" it="0" lt="25" ct="0" ts="1570526205239" s="false" lb="login_login_11" rc="200" rm="OK" tn="登录 1-1" dt="text" by="300" sby="339" sc="1" ec="1" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: text expected to contain /请输入正确的手机号/</failureMessage>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 60
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的短信验证码&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;15726399970&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="22" it="0" lt="22" ct="0" ts="1570526205269" s="true" lb="login_login_12" rc="200" rm="OK" tn="登录 1-1" dt="text" by="294" sby="333" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 54
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的手机号&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;12.36&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="24" ct="0" ts="1570526205296" s="true" lb="login_login_13" rc="200" rm="OK" tn="登录 1-1" dt="text" by="300" sby="335" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 56
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的短信验证码&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;15726399706&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="24" ct="0" ts="1570526205325" s="true" lb="login_login_14" rc="200" rm="OK" tn="登录 1-1" dt="text" by="300" sby="336" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 57
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的短信验证码&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;15726399706&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot; &quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="26" it="0" lt="25" ct="0" ts="1570526205354" s="true" lb="login_login_15" rc="200" rm="OK" tn="登录 1-1" dt="text" by="300" sby="337" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 58
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的短信验证码&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;15726399706&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;12&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="25" it="0" lt="25" ct="0" ts="1570526205384" s="true" lb="login_login_16" rc="200" rm="OK" tn="登录 1-1" dt="text" by="300" sby="341" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 62
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的短信验证码&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;15726399706&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;123456&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="24" ct="0" ts="1570526205414" s="true" lb="login_login_17" rc="200" rm="OK" tn="登录 1-1" dt="text" by="300" sby="338" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 59
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的短信验证码&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;15726399706&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;abc&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="23" ct="0" ts="1570526205443" s="true" lb="login_login_18" rc="200" rm="OK" tn="登录 1-1" dt="text" by="300" sby="341" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 62
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的短信验证码&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;15726399706&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;汉字&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="24" it="0" lt="24" ct="0" ts="1570526205472" s="true" lb="login_login_19" rc="200" rm="OK" tn="登录 1-1" dt="text" by="300" sby="341" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 62
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:0,&quot;message&quot;:&quot;请输入正确的短信验证码&quot;,&quot;data&quot;:null,&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:&quot;15726399706&quot;,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;123459&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+<httpSample t="44" it="0" lt="44" ct="0" ts="1570526205501" s="true" lb="login_login_1" rc="200" rm="OK" tn="登录 1-1" dt="text" by="649" sby="337" sc="1" ec="0" ng="1" na="1" hn="20180419-113111">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+X-Application-Context: application:test:8080
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Tue, 08 Oct 2019 09:16:44 GMT
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+Authorization: 
+Content-Type: application/json
+deviceId: D62EA55A-06EC-4888-8164-0C021525FB12
+platform: iOS
+Content-Length: 58
+Host: 192.168.29.88:8080
+User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_171)
+</requestHeader>
+  <responseData class="java.lang.String">{&quot;code&quot;:1,&quot;message&quot;:&quot;登录成功&quot;,&quot;data&quot;:{&quot;id&quot;:479,&quot;phone&quot;:&quot;15726399706&quot;,&quot;role&quot;:2,&quot;platform&quot;:&quot;IOS&quot;,&quot;loginToken&quot;:&quot;A60335D390615D8421C2357134221B60&quot;,&quot;isRes&quot;:0,&quot;behRole&quot;:null,&quot;certificateStatus&quot;:0,&quot;cluesCount&quot;:null,&quot;todayNum&quot;:null,&quot;countNum&quot;:null,&quot;custName&quot;:null,&quot;pushTime&quot;:null,&quot;roleName&quot;:null,&quot;simpleCustName&quot;:null,&quot;isCaptain&quot;:2,&quot;captainPhone&quot;:null,&quot;fullName&quot;:null,&quot;idCard&quot;:null,&quot;nikeName&quot;:null,&quot;headPortrait&quot;:null},&quot;logintoken&quot;:null}</responseData>
+  <responseFile class="java.lang.String"></responseFile>
+  <cookies class="java.lang.String"></cookies>
+  <method class="java.lang.String">POST</method>
+  <queryString class="java.lang.String">{&quot;proposerTel&quot;:15726399706,&quot;platform&quot;:&quot;IOS&quot;,&quot;code&quot;:&quot;2701&quot;}</queryString>
+  <java.net.URL>http://192.168.29.88:8080/app/userController/login</java.net.URL>
+</httpSample>
+
+</testResults>
